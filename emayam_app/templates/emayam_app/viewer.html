@@ -1,0 +1,14 @@
+<!-- templates/emayam_app/viewer.html -->
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Viewer Page - Emayam Technologies</title>
+{% endblock %}
+
+{% block content %}
+<h1>Viewer Page</h1>
+<p>Welcome, <span id="username"></span>!</p>
+<p>Your role is: <span id="role"></span></p>
+<p>This section is only accessible to Viewers.</p>
+<button onclick="logout()">Logout</button>
+{% endblock %}

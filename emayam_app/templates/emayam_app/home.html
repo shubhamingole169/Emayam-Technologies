@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Home Page</title>
+{% endblock %}
+
+{% block content %}
+<h1>Welcome to the Web Application</h1>
+<nav>
+    <ul>
+        {% comment %} <li><a href="{% url 'register_page' %}">Register</a></li>
+        <li><a href="{% url 'login_page' %}">Login</a></li> {% endcomment %}
+    </ul>
+</nav>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Content Editor{% endblock %}
+
+{% block content %}
+    <h1>Content Editor</h1>
+    <p>{{ content }}</p>
+    {% if user.role in ['admin', 'editor'] %}
+    <form method="post">
+        {% csrf_token %}
+        <textarea name="content">{{ content }}</textarea>
+        <button type="submit">Save</button>
+    </form>
+    {% else %}
+    <p>You do not have permission to edit this content.</p>
+    {% endif %}
+{% endblock %}

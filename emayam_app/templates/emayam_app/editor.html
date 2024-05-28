@@ -1,0 +1,14 @@
+<!-- templates/emayam_app/editor.html -->
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Editor Page - Emayam Technologies</title>
+{% endblock %}
+
+{% block content %}
+<h1>Editor Page</h1>
+<p>Welcome, <span id="username"></span>!</p>
+<p>Your role is: <span id="role"></span></p>
+<p>This section is only accessible to Editors.</p>
+<button onclick="logout()">Logout</button>
+{% endblock %}
