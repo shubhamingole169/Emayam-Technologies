@@ -38,11 +38,6 @@ Before running the application, ensure you have the following installed:
     pip install -r requirements.txt
     ```
 
-4. Install Node.js dependencies (if applicable):
-
-    ```bash
-    npm install
-    ```
 
 ## Configuration
 
